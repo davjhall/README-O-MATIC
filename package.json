@@ -1,0 +1,20 @@
+{
+  "name": "readme-o-matic",
+  "version": "1.0.0",
+  "description": "Automatically create a README file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davjhall/README-O-MATIC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davjhall/README-O-MATIC/issues"
+  },
+  "homepage": "https://github.com/davjhall/README-O-MATIC#readme"
+}
