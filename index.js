@@ -12,33 +12,33 @@ inquirer
 {
     type: 'input',
     message: 'Provide a short description of what your project does?',
-    name: 'clubName',
+    name: 'Description',
   },
   {
     type: 'input',
     message: 'What are the steps to install your project?',
-    name: 'confirm',
+    name: 'Steps',
   },
  {
     type: 'input',
     message: 'What are some examples and instructions for use?',
-    name: 'clubName',
+    name: 'Examples',
   },
   {
     type: 'input',
     message: 'List your collaborators, if any, with links to their GitHub profiles.',
-    name: 'confirm',
+    name: 'Collabs',
     default: 'N/A'
   },
   {
     type: 'input',
     message: 'What is your GitHub username?',
-    name: 'confirm',
+    name: 'Username',
   },
   {
     type: 'input',
     message: 'What is your email address?',
-    name: 'confirm',
+    name: 'Email',
   },
 ])
 
@@ -49,14 +49,14 @@ inquirer
 );
 
 
-// TODO: Create an array of questions for user input
-const questions = [];
+// // TODO: Create an array of questions for user input
+// const questions = [];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
 // Function call to initialize app
-init();
+// init();
