@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/davjhall/README-O-MATIC/issues"
   },
-  "homepage": "https://github.com/davjhall/README-O-MATIC#readme"
+  "homepage": "https://github.com/davjhall/README-O-MATIC#readme",
+  "dependencies": {
+    "inquirer": "^9.1.3"
+  }
 }

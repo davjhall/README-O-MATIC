@@ -1,4 +1,53 @@
 // TODO: Include packages needed for this application
+const inquirer = require('inquirer');
+
+inquirer
+  .prompt([
+{
+    type: `input`,
+    message: `What is the title of your project?`,
+    name: `title`,
+},
+
+{
+    type: 'input',
+    message: 'Provide a short description of what your project does?',
+    name: 'clubName',
+  },
+  {
+    type: 'input',
+    message: 'What are the steps to install your project?',
+    name: 'confirm',
+  },
+ {
+    type: 'input',
+    message: 'What are some examples and instructions for use?',
+    name: 'clubName',
+  },
+  {
+    type: 'input',
+    message: 'List your collaborators, if any, with links to their GitHub profiles.',
+    name: 'confirm',
+    default: 'N/A'
+  },
+  {
+    type: 'input',
+    message: 'What is your GitHub username?',
+    name: 'confirm',
+  },
+  {
+    type: 'input',
+    message: 'What is your email address?',
+    name: 'confirm',
+  },
+])
+
+.then((response) =>
+  response.confirm === response.input
+    ? console.log('Success!')
+    : console.log('You the man Juug')
+);
+
 
 // TODO: Create an array of questions for user input
 const questions = [];
