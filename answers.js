@@ -38,8 +38,14 @@ function answers(response){
     If you have any questions you can reach me at: 
      ${response.email}
      https://github.com/${response.Username}
-`
-     
+
+
+      ## Link to video
+      https://app.castify.com/view/d646a778-578b-4b67-a4e9-4f8a7fff11c3
+` 
+
+
+
      console.log(template)
      fs.writeFile('README.md', 
     template,
