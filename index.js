@@ -1,7 +1,9 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-
+const answers = require('./answers')
 inquirer
+
+
   .prompt([
 {
     type: `input`,
@@ -31,26 +33,36 @@ inquirer
     default: 'N/A'
   },
   {
+    type: 'list',
+    message: 'Which license would you like to add?',
+    name: 'lic',
+    choices: ['BSD', 'MIT', 'GPL'],
+
+  },
+  {
     type: 'input',
     message: 'What is your GitHub username?',
     name: 'Username',
   },
+  
   {
     type: 'input',
     message: 'What is your email address?',
-    name: 'Email',
+    name: 'email',
   },
 ])
 
-.then((response) =>
+
+.then((response) =>{
+
+  answers(response);
   response.confirm === response.input
-    ? console.log('Success!')
-    : console.log('You the man Juug')
+  ? console.log('Success!')
+  : console.log('')
+}
 );
 
 
-// // TODO: Create an array of questions for user input
-// const questions = [];
 
 // // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
